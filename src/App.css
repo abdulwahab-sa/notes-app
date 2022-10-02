@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+  background-color: #FDFCE5;
+}
+
+/* HEADER */
+
+header{
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+}
+
+.header--title{
+  font-size: 2rem;
+  
+}
+
+.colors-list{
+display: flex;
+gap: 20px;
+align-items: center;
+margin: 1rem auto;
+justify-content: center;
+}
+
+
+.colors-list-item{
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  list-style: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.colors-list-item:hover{
+  transform: scale(1.5);
+
+}
+
+/* NOTES CONTAINER */
+
+.container{
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+/* NOTE COMPONENT */
+
+.note--wrapper{
+  width: 16rem;
+  height: 16rem;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+
+}
+
+.note--text{
+  flex: 1;
+  resize: none;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  outline: none;
+  border: none;
+
+}
+
+
+.note--footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+}
+
+.delete--icon{
+  background-color: inherit;
+
+}
+
+.delete--icon:hover{
+  color: red;
+  cursor: pointer;
+}
+
+
+small{
+  background-color: inherit;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+  }
+
+  .note--wrapper{
+    margin: 1rem 1rem;
+  }
+}
